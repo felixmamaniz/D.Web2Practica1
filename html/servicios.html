@@ -8,10 +8,9 @@
         <link rel="stylesheet" href="../css/servicios.css">
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
+    
     <body>
-        <script type="text/javascript">
-            swal('Presione OK','para continuar','error');
-        </script>
+        
         <header>
             <div class="contenedor">
                 <h1 class="icon-desktop-2">World Computer</h1>
@@ -82,5 +81,23 @@
                 </div>
             </div>
         </footer>
+        <script>
+            swal({
+                    title: "Estás seguro?",
+                    text: "Una vez eliminado, No podrás recuperar este archivo imaginario!",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                    })
+                    .then((willDelete) => {
+                    if (willDelete) {
+                        swal("!Tu archivo imaginario ha sido eliminado!", {
+                        icon: "success",
+                        });
+                    } else {
+                        swal("Tu archivo imaginario está a salvo!");
+                    }
+                });
+        </script>
     </body>
 </html>
