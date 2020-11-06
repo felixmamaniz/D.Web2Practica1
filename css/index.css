@@ -340,12 +340,10 @@ footer .contenedor {
     margin:auto;
    }
    
-   A continuación escondemos las imágenes por defecto
    .mySlides{
     display:none;
    }
    
-   Y finalmente las animaciones
    .fade{
     -webkit-animation-name:fade;
     -webkit-animation-duration:1.5s;
